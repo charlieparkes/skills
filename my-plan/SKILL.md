@@ -13,7 +13,24 @@ The plan should match this structure exactly.
 
 {single sentence or short paragraph}
 
+## Questions
+
+### Unanswered
+- Q1: {question}
+  - SA1: {suggested answer}
+  - SA2: {suggested answer}
+
+### Answered
+
+#### Q1
+
+Question: {question}
+
+Answer: {answer}
+
 ## Assumptions
+
+{list of assumptions made}
 
 - {assumption}
 
@@ -39,10 +56,6 @@ The plan should match this structure exactly.
 
 - {risk}
 
-## Questions
-
-- {question}
-
 ## Definition of Done
 
 {definition of done}
@@ -59,3 +72,5 @@ The plan should match this structure exactly.
 - When the task is a bug, plan the fix at the cause: one change in the shared function every caller reaches, not one change per calling site.
 - Do not plan steps whose product is documentation, comments, or boilerplate nobody asked for.
 - Non-trivial logic gets one verification that fails if the logic breaks, in the style of tests this repository already has. A trivial one-liner does not need its own test.
+- When writing assumptions, do not reference "owning team" and "external owners". Do not describe "recording decisions." Simply describe the design decision or assumption.
+- Describe implementation, not process.
